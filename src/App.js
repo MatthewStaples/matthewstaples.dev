@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="mattstapleslogo.png" className="App-logo" alt="logo" ></img>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          professional profile in the making...
         </p>
         <a
           className="App-link"
@@ -15,11 +15,20 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          learn react
         </a>
+        <img src="mugshotcropped.png "className="App-content" alt="head"></img>
       </header>
+      <body className="App-body">
+        <p>
+          My story
+        </p>
+      </body>
     </div>
   );
 }
+
+// O.G Spinning React logo (ln 8)
+// <img src={logo} className="App-logo" alt="logo" />
 
 export default App;

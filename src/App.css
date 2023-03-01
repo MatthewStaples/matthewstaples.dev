@@ -3,36 +3,60 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 9vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+/* O.G reactlogo spin anamation (ln12)
+ animation: App-logo-spin infinite 20s linear; */
+
+.App-content {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-content {
+    animation:spin infinite 5s linear; 
   }
 }
 
-.App-header {
-  background-color: #282c34;
+ .App-header {
+  background-color: #FFD18C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /**justify-content: center;**/
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #802BFE;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #339933;
 }
 
-@keyframes App-logo-spin {
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+      transform:rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform:rotate(360deg);
   }
 }
